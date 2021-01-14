@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title> Celebrity Dating App</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1> Celebrity Dating App </h1>
+      <form id="quiz">
+        <label for="fav-number"> Favorite Number: </label>
+        <input type="number" id="fav-number" class="fav-number" min="0" max="100">
+        <br>
+        <hr>
+
+        <label for="color"> Favorite Color: </label>
+        <input type="color" id="color" class="color">
+        <br>
+        <hr>
+
+        <label for="food"> Which Food Would Pick As a Last Meal: </label>
+        <select name="food" id="food">
+          <option selected="selected"></option>
+          <option value="spaghetti"> Spaghetti </option>
+          <option value="popeyes"> Popeyes </option>
+          <option value="ice cream"> Ice Cream </option>
+        </select>
+        <br>
+        <hr>
+
+        <button type="submit" value="Submit" class="btn btn-success">Submit Quiz</button>
+      </form>
+    </div>
+
+    <div id="quiz-result"></div>
+
+  </body>
+</html>
